@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_hhe/Scenes/main.unity
+    path: Assets/_hhe/XboxWirelessController/Scenes/main.unity
     guid: ede4e3cd313117a4e8c112fc6edd3bca
   m_configObjects: {}
