@@ -12,10 +12,12 @@ public class UfoController : MonoBehaviour
 
 
     private Rigidbody rb;
+    private Animator anim;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -27,6 +29,10 @@ public class UfoController : MonoBehaviour
         if (Input.GetButtonDown("BButton"))
         {
             transform.localScale /= 1.1f;
+        }
+        if (Input.GetButtonDown("XButton"))
+        {
+            anim.SetBool("LandingGearUp", !anim.GetBool("LandingGearUp"));
         }
         #endregion
 
